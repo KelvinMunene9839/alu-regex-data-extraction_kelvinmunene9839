@@ -1,0 +1,45 @@
+{
+    "emails": {
+        "alu_official": [
+            "admin.office@alueducation.com",
+            "dr.smith@alueducation.com",
+            "phishing.com@alueducation.com"
+        ],
+        "alu_alumni": [
+            "john.doe.2023@alumni.alueducation.com",
+            "support.alumni@alumni.alueducation.com"
+        ],
+        "alu_si": [
+            "internship.lead@si.alueducation.com"
+        ],
+        "other_valid": [
+            "attacker@malicious-alueducation.com",
+            "bad_user@si.alueducation.com.phishing.net",
+            "fake.admin@alueducation.com.attacker.com"
+        ]
+    },
+    "credit_cards": [
+        {
+            "status": "VALID",
+            "masked_number": "XXXX-XXXX-XXXX-0000"
+        },
+        {
+            "status": "VALID",
+            "masked_number": "XXXX-XXXX-XXXX-0004"
+        }
+    ],
+    "phone_numbers": [],
+    "html_tags": [],
+    "rejections_and_audit": [
+        {
+            "type": "email",
+            "value": "invalid..email@alueducation.com",
+            "reason": "Malformed local part"
+        },
+        {
+            "type": "credit_card",
+            "value": "XXXX-XXXX-XXXX-4444",
+            "reason": "Failed Luhn Checksum validation"
+        }
+    ]
+}
