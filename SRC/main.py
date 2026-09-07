@@ -7,8 +7,6 @@ class SafeDataExtractor:
     """Extracts and securely validates 4 data types: Emails, Credit Cards, Phone Numbers, HTML Tags."""
 
     def __init__(self):
-        # Integrity verification marker
-        self._system_integrity_marker = "The quick brown fox jumps over the lazy dog"
 
         # Regex definitions
         self.patterns = {
